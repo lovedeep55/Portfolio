@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovedeep Singh - About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css\styles.css">
+</head>
+<body>
+    <header class="w-full bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <a href="index.html" class="logo text-gray-900">
+            Lovedeep Singh
+        </a>
+        <nav class="flex space-x-6">
+            <a href="#projects" class="text-gray-700 hover:text-black">Projects</a>
+            <a href="#articles" class="text-gray-700 hover:text-black">Articles</a>
+            <a href="aboutme.html" class="text-gray-700 hover:text-black">About</a>
+            <a href="#contact" class="text-gray-700 hover:text-black">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>
+
+<body>
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-gray-50">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-gray-900 mb-4">About Me</h2>
+        <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+            Hi, I'm Lovedeep Singh, a passionate engineer who specializes in designing innovative solutions and solving complex problems. I have a background in mechanical engineering, with a focus on electrical systems and energy-efficient designs. I thrive on challenges and am constantly seeking opportunities to learn and grow.
+        </p>
+        
+    </div>
+</section>
+<!-- Contact Me Section -->
+<section id="contact" class="py-20 px-6 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-gray-900 mb-4">Contact Me</h2>
+        <form action="#" method="POST" class="max-w-lg mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-left text-lg font-medium text-gray-700">Your Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-left text-lg font-medium text-gray-700">Your Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-left text-lg font-medium text-gray-700">Your Message</label>
+                <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="py-2 px-6 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-300">Send Message</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>
