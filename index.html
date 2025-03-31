@@ -3,39 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Header</title>
+    <title>Lovedeep's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="w-full bg-white shadow-md py-4 px-6 flex justify-between items-center">
-        <a href="/" class="logo text-gray-900">
+    <header class="w-full bg-gray-300 shadow-md py-4 px-6 flex justify-between items-center">
+        <a href="/" class="logo text-gray-900 text-3xl font-semibold hover:text-black transition-colors duration-300">
             Lovedeep Singh
         </a>
         <nav class="flex space-x-6">
             <a href="#projects" class="text-gray-700 hover:text-black">Projects</a>
-            <a href="#articles" class="text-gray-700 hover:text-black">Articles</a>
+            <!--<a href="#articles" class="text-gray-700 hover:text-black">Articles</a> -->
             <a href="aboutme.html" class="text-gray-700 hover:text-black">About</a>
             <a href="#contact" class="text-gray-700 hover:text-black">Contact</a>
         </nav>
     </header>
-        <!-- About Section -->
-        <section id="about" class="py-20 px-6 bg-gray-50">
-            <div class="container mx-auto text-center">
-                <h2 class="text-4xl font-semibold text-gray-900 mb-4">Work Projects</h2>
-                
+
+    <!-- About Section -->
+    <section id="about" class="py-0 px-20 bg-gray-50">
+        <div class="container mx-auto flex items-center">
+            <div class="w-1/4 pr-10">
+                <img src="assets/images/lovedeep-profile.png" alt="Your Picture" class="w-full h-auto rounded-full">
             </div>
-        </section>
-        <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="projects\project1.html" class="bg-white shadow-md rounded-lg p-4 text-center block transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                <img src="assets\images\l40.JPG" alt="Project 1" class="w-full h-40 object-cover rounded">
-                <h3 class="mt-4 text-lg font-semibold">Mechanical design of L040 motor controller</h3>
-                <p class="text-gray-600">Exro Technologies </p>
-            </a>
-            
+            <div class="w-2/3 text-left">
+                <p class="text-gray-800 text-lg leading-relaxed">
+                    Hello, I'm Lovedeep Singh, a passionate engineer with a strong background in mechanical design and system optimization. I specialize in developing solutions for advanced technologies, including electric vehicle systems, thermal management for motors, and more. My goal is to innovate and improve existing systems through meticulous design and testing.
+                </p>
+            </div>
         </div>
     </section>
+
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="py-20 px-6 flex justify-center items-center bg-gray-130">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Work Experience</h2>
+            
+            <div class="work-experience-item flex items-center mb-6 justify-center">
+                <img src="assets/images/exro-logo.png" alt="Exro Technologies Logo" class="company-logo w-25 h-16 mr-6">
+                <div class="company-info">
+                    <h3 class="company-name text-xl font-semibold inline">Exro Technologies</h3>
+                    <span class="job-title text-lg text-gray-800 inline ml-4">Mechanical Engineer</span>
+                    <span class="job-dates text-sm text-gray-500 inline ml-4">(March 2022 - Present)</span>
+                </div>
+            </div>
+
+            <div class="work-experience-item flex items-center mb-6 justify-center">
+                <img src="assets/images/cellprop-logo.jpg" alt="Cellprop Pvt. Ltd. Logo" class="company-logo w-25 h-16 mr-6">
+                <div class="company-info">
+                    <h3 class="company-name text-xl font-semibold inline">Cellprop Pvt. Ltd.</h3>
+                    <span class="job-title text-lg text-gray-800 inline ml-4">Lead/Mechanical Engineer</span>
+                    <span class="job-dates text-sm text-gray-500 inline ml-4">(Dec 2017 - Aug 2020)</span>
+                </div>
+            </div>
+
+            <div class="work-experience-item flex items-center mb-6 justify-center">
+                <img src="assets/images/Stash-Energy-Logo.png" alt="Stash Energy Logo" class="company-logo w-25 h-12 mr-6">
+                <div class="company-info">
+                    <h3 class="company-name text-xl font-semibold inline">Stash Energy</h3>
+                    <span class="job-title text-lg text-gray-800 inline ml-4">Internship</span>
+                    <span class="job-dates text-sm text-gray-500 inline ml-4">(May 2021 - Aug 2021)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-8">Projects</h2>
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <a href="projects/project1.html" class="bg-white shadow-md rounded-lg p-4 text-center block transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="assets/images/l40.JPG" alt="Project 1" class="w-full h-40 object-cover rounded">
+                    <h3 class="mt-4 text-lg font-semibold">Mechanical design of L040 motor controller</h3>
+                    <p class="text-gray-600">Exro Technologies</p>
+                </a>
+                <!-- Project 2 -->
+
+                <a href="projects/project2.html" class="bg-white shadow-md rounded-lg p-4 text-center block transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="assets/images/charger.jpg" alt="Project 2" class="w-full h-40 object-cover rounded">
+                    <h3 class="mt-4 text-lg font-semibold">Mechanical design of 1.2kW Charger for Ultraviolette automotive</h3>
+                    <p class="text-gray-600">Cellprop Pvt. Ltd.</p>
+                </a>
+                <!-- Project 3 -->
+
+                <a href="projects/project3.html" class="bg-white shadow-md rounded-lg p-4 text-center block transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="assets/images/charger.jpg" alt="Project 2" class="w-full h-40 object-cover rounded">
+                    <h3 class="mt-4 text-lg font-semibold">Mechanical design of 1.2kW Charger for Ultraviolette automotive</h3>
+                    <p class="text-gray-600">Cellprop Pvt. Ltd.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 flex justify-center items-center">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Education</h2>
+
+            <!-- Education 1 -->
+            <div class="education-item flex items-center mb-6 justify-center">
+                <!-- University Logo -->
+                <img src="assets/images/unb_logo.png" alt="University 1 Logo" class="education-logo w-25 h-16 mr-6">
+                
+                <!-- University Name, Degree, and Dates -->
+                <div class="education-info">
+                    <h3 class="university-name text-xl font-semibold inline">University of New Brunswick</h3>
+                    <span class="degree text-lg text-gray-800 inline ml-4">Master's in Mechanical Engineering</span>
+                    <span class="edu-dates text-sm text-gray-500 inline ml-4">(Sep 2020 - Dec 2021)</span>
+                </div>
+            </div>
+
+            <!-- Education 2 -->
+            <div class="education-item flex items-center mb-6 justify-center">
+                <!-- University Logo -->
+                <img src="assets/images/gne-logo.png" alt="University 2 Logo" class="education-logo w-18 h-16 mr-6">
+                
+                <!-- University Name, Degree, and Dates -->
+                <div class="education-info">
+                    <h3 class="university-name text-xl font-semibold inline">Guru Nanak Dev Engineering College Ludhiana</h3>
+                    <span class="degree text-lg text-gray-800 inline ml-4">B.Tech in Mechanical Engineering</span>
+                    <span class="edu-dates text-sm text-gray-500 inline ml-4">(June 2013 - May 2017)</span>
+                </div>
+            </div>
+
+            <!-- Add more education details as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white text-center py-6 mt-10">
+        <p class="text-lg font-semibold mb-4">Connect with me:</p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+            <!-- Email -->
+            <a href="mailto:lovedeep.dhillon558@gmail.com" class="flex items-center space-x-2 text-white hover:text-gray-400">
+                <i class="ph ph-envelope text-3xl"></i>
+                <span class="text-lg">lovedeep.dhillon558@gmail.com</span>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/lovedeep-singh-57220a8b/" target="_blank" class="flex items-center space-x-2 text-white hover:text-gray-400">
+                <i class="ph ph-linkedin-logo text-3xl"></i>
+                <span class="text-lg">linkedin.com/in/lovedeep</span>
+            </a>
+
+            <!-- Resume Link -->
+            <a href="assets/resume/Lovedeep_S_Mechanical_Engineer_2025.pdf" target="_blank" class="flex items-center space-x-2 text-white hover:text-gray-400">
+                <i class="ph ph-file-pdf text-3xl"></i>
+                <span class="text-lg">Resume</span>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovedeep's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">     
+</head>
+<body>
+    <header class="w-full bg-white shadow-md py-4 px-10 flex justify-between items-center">
+        <a href="/" class="text-xl font-semibold text-gray-900">Lovedeep Singh</a>
+        <nav class="flex space-x-6"> 
+            <a href="#contact" class="text-gray-700 hover:text-black transition">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="Project 2 name" class="pt-20 px-20 bg-gray-50 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold text-gray-900 mb-4">Mechanical design of 1.2kW Charger for Ultraviolette automotive</h2>
+            <div class="flex justify-center">
+                <video id="project-video" class="w-2/3 h-auto mt-8 rounded-lg shadow-lg" autoplay muted controls>
+                    <source src="../assets/video/charger-assembly.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Description below the video -->
+            <div class=" text-lg text-gray-700 leading-relaxed mt-4">
+                
+            </div>  
+        </div>
+        <script>
+            // Wait for the video to be loaded before changing the playback speed
+            document.getElementById('project-video').addEventListener('loadeddata', function() {
+                const video = document.getElementById('project-video');
+                video.playbackRate = 0.5; // Set playback speed to 80%
+            });
+        </script>
+    </section>
+    
+    
+    
+    <section id="Project 2 name" class="py-0 px-20 bg-gray-50">
+        <div class="container mx-auto">
+            <!--Project Intro-->
+            <div class="mt-10 p-8 bg-gray-100 rounded-lg shadow-md max-w-6xl mx-auto hover-effect">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Project Overview</h3>
+                <p class="list-disc text-lg text-gray-700 text-left pl-5"> This project was a customer-driven initiative aimed at developing a 1.2kW prototype charger to 
+                    demonstrate the bike's charging capabilities during an investor showcase meeting. 
+                    It was not a production version, but rather a prototype for investors.
+                     The project faced constraints related to limited space and airflow for inlets and outlets, and 
+                     Exro was working with a restricted budget. 
+                </p>
+            </div>
+            
+            
+            
+            <!-- Responsibilities Block -->
+            <div class="mt-10 p-8 bg-gray-10 rounded-lg shadow-md max-w-6xl mx-auto hover-effect">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Responsibilities</h3>
+                <ul class="list-disc text-lg text-gray-700 text-left pl-5">
+                    <li>Detailed CAD modeling of the charger components.</li>
+                    <li>Ensuring thermal and electrical safety of the charger.</li>
+                    <li>Collaborating with the electrical engineering team to develop the layout of the charger.</li>
+                    <li>Conducting simulations and testing for performance verification.</li>
+                    <li>Managing project timelines and delivery milestones.</li>
+                </ul>
+            </div>
+
+            <!-- Manufacturing challenge -->
+            <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Charger Casing Manufacturing Cost</h3>
+                
+                <ul class="list-none text-lg text-gray-700 text-left space-y-4">
+                    <li>
+                        <strong>Situation:</strong>  
+                        <ul class="list-disc pl-5">
+                            <li>
+                                The CNC machining cost for the aluminum block used in the casing exceeded the budget. Exro was in a tight financial situation, making it clear that machining the casing was not a feasible option.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Task:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>As the mechanical engineer for this project, 
+                                I was tasked with finding a way to reduce costs while maintaining the design's integrity. </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Action:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>The solution to this problem was to machine each side of the casing separately.</li>
+                            <li>Complete welding was performed on all four sides of the casing. </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Result:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>By welding all four sides of the casing, I was able to reduce the cost of the charger casing by 40%.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Images Block Below Text -->
+                <div class="flex space-x-8 mt-8">
+                    <div class="flex-1">
+                        <img src="../assets/images/20200904_104628.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <img src="../assets/images/20200904_104651.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <img src="../assets/images/20200905_150932.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+
+
+    
+            <!-- Thermal design challenge -->
+            <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Thermal Design Challenges</h3>
+                
+                <ul class="list-none text-lg text-gray-700 text-left space-y-4">
+                    <li>
+                        <strong>Situation:</strong>  
+                        <ul class="list-disc pl-5">
+                            <li>
+                                A height constraint for the charger casing limited the selection of fans for optimal airflow.
+                            </li>
+                            <li>
+                                Due to fixed ducting, the airflow inlet was positioned at the front, 
+                                and the outlet was on the side of the charger, complicating the airflow path.
+                            </li>
+                            <li>
+                                Given these constraints, the situation posed an optimization challenge.
+                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Task:</strong>
+                        <ul class="list-disc pl-5">
+                            <li> Considering the space limitations and a heat loss of 80-90 watts, 
+                                I was tasked with designing a thermal system for the charger. </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Action:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>To address this, I selected a fan with a maximum height of 55mm, which provided the highest possible CFM.</li>
+                            <li>Based on forced convection calculations (h-value), 
+                                I determined the necessary number of fins for effective heat transfer.                            </li>
+                            <li>Several simulations were conducted in Mentor FloTHERM to optimize the number and height of the fins.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Result:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>For thermal testing, I incorporated resistors to simulate various heat load profiles</li>
+                            <li>The charger was able to operate at 90% of its rated load. However, there were some issues 
+                                with airflow patterns and choking.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Images Block Below Text -->
+                <div class="flex space-x-8 mt-8">
+                    <div class="flex-1">
+                        <img src="../assets/images/20200911_182510.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <img src="../assets/images/upload_1597925036244.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    
+                </div>
+            </div>
+           <!-- <div class="flex justify-center">
+                <video id="project-video" class="w-2/3 h-auto mt-8 rounded-lg shadow-lg" autoplay muted controls>
+                    <source src="../assets/video/91EE5AF0-FDCB-498D-99F2-97001D6E204C.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+
+
+        </div>
+    </section>
+    
+    
+    
+    
+    <footer id="contact" class="bg-gray-800 text-white text-center py-6 mt-10">
+        <p class="text-lg text-center font-semibold mb-4">Connect with me:</p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+            <a href="mailto:lovedeep.dhillon558@gmail.com" class="flex items-center space-x-2 text-white hover:text-gray-400">
+                <i class="ph ph-envelope text-3xl"></i>
+                <span class="text-lg">lovedeep.dhillon558@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/lovedeep-singh-57220a8b/" target="_blank" class="flex items-center space-x-2 text-white hover:text-gray-400">
+                <i class="ph ph-linkedin-logo text-3xl"></i>
+                <span class="text-lg">linkedin.com/in/lovedeep</span>
+            </a>
+            <a href="../assets/resume/Lovedeep_S_Mechanical_Engineer_2025.pdf" target="_blank" class="flex items-center space-x-2 text-white hover:text-gray-400">
+                <i class="ph ph-file-pdf text-3xl"></i>
+                <span class="text-lg">Resume</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html
