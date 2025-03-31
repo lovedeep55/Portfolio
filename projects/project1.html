@@ -82,30 +82,48 @@
                         <strong>Situation:</strong>  
                         <ul class="list-disc pl-5">
                             <li>
-                                The first article inspection (FAI) 
+                                The first batch of heat sinks received from the supplier did not meet the required tolerances. 
+                                Additionally, some holes were misaligned by 1mm.
+                            </li>
+                            <li>
+                                There was also a porosity issue with the cast heat sink, affecting structural integrity and performance.
                             </li>
                         </ul>
                     </li>
                     <li>
                         <strong>Task:</strong>
                         <ul class="list-disc pl-5">
-                            <li>As the mechanical engineer for this project, 
-                                I was tasked with finding a way to reduce costs while maintaining the design's integrity. </li>
+                            <li>As the mechanical engineer for this project, I was responsible for identifying and resolving 
+                                manufacturing issues related to the cast heat sinks. </li>
                         </ul>
                     </li>
 
                     <li>
                         <strong>Action:</strong>
                         <ul class="list-disc pl-5">
-                            <li>The solution to this problem was to machine each side of the casing separately.</li>
-                            <li>Complete welding was performed on all four sides of the casing. </li>
+                            <li>The first step was to analyze the root cause of the 1mm positional shift in the heat sink holes.</li>
+                            <li>Upon investigation, I identified that the issue stemmed from
+                                 Geometric Dimensioning & Tolerancing (GD&T) datum references.  </li>
+                            <li>The existing drawings used a single set of datums, which effectively controlled
+                                 machined features but failed to control the as-cast features accurately.  </li>
+                            <li>To address this, I implemented a dual-datum system: 
+                                <ol class="list-disc pl-5"> 
+                                    <li>The first datum set controlled cast features.   </li>
+                                    <li>The second datum set, based on the first, controlled machined features. </li>
+                                </ol>
+                            </li>
+
                         </ul>
                     </li>
 
                     <li>
                         <strong>Result:</strong>
                         <ul class="list-disc pl-5">
-                            <li>By welding all four sides of the casing, I was able to reduce the cost of the charger casing by 40%.</li>
+                            <li>The revised dual-datum approach allowed for looser tolerances on cast features, 
+                                eliminating the need for additional machining operations.</li>
+                            <li>This change reduced production failures from 7 out of 10 to 2 out of 10. </li>
+                            <li>The new tolerance strategy led to an estimated cost reduction of 5-7% by 
+                                minimizing stringent machining requirements on cast features.</li>
                         </ul>
                     </li>
                 </ul>
@@ -113,64 +131,84 @@
                 <!-- Images Block Below Text -->
                 <div class="flex space-x-8 mt-8">
                     <div class="flex-1">
-                        <img src="../assets/images/20200904_104628.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/6A657EF4-6F4F-4BE8-845D-C4C6B3E310EE.JPG" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     <div class="flex-1">
-                        <img src="../assets/images/20200904_104651.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/93D1093C-6B08-43A8-9A6B-B4F06B29B9BC.JPG" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     <div class="flex-1">
-                        <img src="../assets/images/20200905_150932.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/C3C02476-E6F3-4CF0-ADFD-067EAB3BFA01.JPG" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                 </div>
             </div>
 
 
     
-            <!-- Thermal design challenge -->
-            <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Thermal Design Challenges</h3>
+             <!-- Cast heat sink material -->
+             <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Cast heat sink material change</h3>
                 
                 <ul class="list-none text-lg text-gray-700 text-left space-y-4">
                     <li>
                         <strong>Situation:</strong>  
                         <ul class="list-disc pl-5">
                             <li>
-                                A height constraint for the charger casing limited the selection of fans for optimal airflow.
+                                Due to porosity issues and the high cost of the original material (ADC1), 
+                                a collective decision was made to evaluate an alternative material within 
+                                the ADC family.
+
+
                             </li>
                             <li>
-                                Due to fixed ducting, the airflow inlet was positioned at the front, 
-                                and the outlet was on the side of the charger, complicating the airflow path.
+                                I was given two weeks to assess the performance of the new material compared to ADC1.
                             </li>
-                            <li>
-                                Given these constraints, the situation posed an optimization challenge.
-                             </li>
                         </ul>
                     </li>
                     <li>
                         <strong>Task:</strong>
                         <ul class="list-disc pl-5">
-                            <li> Considering the space limitations and a heat loss of 80-90 watts, 
-                                I was tasked with designing a thermal system for the charger. </li>
+                            <li>I was tasked to evaluate this new material based on thermal, mechanical and 
+                                manufacturing quailuty with ADC1 </li>
                         </ul>
                     </li>
 
                     <li>
                         <strong>Action:</strong>
                         <ul class="list-disc pl-5">
-                            <li>To address this, I selected a fan with a maximum height of 55mm, which provided the highest possible CFM.</li>
-                            <li>Based on forced convection calculations (h-value), 
-                                I determined the necessary number of fins for effective heat transfer.                            </li>
-                            <li>Several simulations were conducted in Mentor FloTHERM to optimize the number and height of the fins.</li>
+                            <li>Upon receiving the first article inspection report and samples from the supplier, 
+                                I conducted a detailed evaluation of the new cast heat sink.</li>
+                            <li>The inspection process included: </li> 
+                                <ol class="list-disc pl-5"> 
+                                    <li>Visual inspection for surface quality.</li>
+                                </ol>
+                                <ol class="list-disc pl-5"> 
+                                    <li>Fitment testing with other components.</li>
+                                </ol>
+                                <ol class="list-disc pl-5"> 
+                                    <li>X-ray analysis to assess porosity levels.</li>
+                                </ol>
+                                <ol class="list-disc pl-5"> 
+                                    <li>CMM (Coordinate Measuring Machine) analysis for dimensional accuracy.</li>
+                                </ol>
+                            </li>
+                            <li>A thermal conductivity analysis revealed that the new material had a 
+                                10 W/m·K lower thermal conductivity compared to ADC1, indicating inferior 
+                                thermal performance.</li>
+                            <li>To quantify the impact, I conducted an experiment using resistors as 
+                                equivalent heat sources, comparing both heat sinks under identical 
+                                environmental conditions and load profiles.</li>
+
                         </ul>
                     </li>
 
                     <li>
                         <strong>Result:</strong>
                         <ul class="list-disc pl-5">
-                            <li>For thermal testing, I incorporated resistors to simulate various heat load profiles</li>
-                            <li>The charger was able to operate at 90% of its rated load. However, there were some issues 
-                                with airflow patterns and choking.
-                            </li>
+                            <li>The new heat sink exhibited a 2°C temperature increase under 
+                                the same operating conditions compared to ADC1.</li>
+                            <li>However, the new material reduced material costs by 8%. </li>
+                            <li>Additionally, porosity defects were significantly lower, with only 1 in 10 samples affected,
+                                 compared to 7 in 10 for ADC1.</li>
                         </ul>
                     </li>
                 </ul>
@@ -178,14 +216,83 @@
                 <!-- Images Block Below Text -->
                 <div class="flex space-x-8 mt-8">
                     <div class="flex-1">
-                        <img src="../assets/images/20200911_182510.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/D531FA4F-97E3-4C7C-8AFF-0C782205904A.JPG" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     <div class="flex-1">
-                        <img src="../assets/images/upload_1597925036244.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/DCB2A69B-687A-4253-86C3-A7D519E30FC5.JPG" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     
                 </div>
             </div>
+            <div class="flex justify-center">
+                <video id="project-video" class="w-1/3 h-auto mt-8 rounded-lg shadow-lg" autoplay muted controls>
+                    <source src="../assets/video/0A85028D-B175-4FC9-A7A9-FD3C90033F44.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Capacitor breaking in vibrations -->
+            <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Capacitor pin breaking in Vibration testing</h3>
+                
+                <ul class="list-none text-lg text-gray-700 text-left space-y-4">
+                    <li>
+                        <strong>Situation:</strong>  
+                        <ul class="list-disc pl-5">
+                            <li>
+                                During vibration simulations of the L040 motor controller (conducted per ISO 16750), 
+                                I observed that the capacitor pins were breaking under stress.
+                            </li>
+                            <li>
+                            The team proceeded with physical testing, and the unit failed at the exact location predicted in the simulations.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Task:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>Following the failure, I was assigned the task of identifying a quick and effective solution to 
+                                mitigate capacitor pin breakage. </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Action:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>I conducted baseline simulations to further analyze the failure mechanism. </li>
+                            <li>It became evident that energy transfer to the capacitor was causing pin deflection, 
+                                leading to fatigue failure. </li>
+                            <li>To address this, I applied an off-the-shelf RTV (Room Temperature Vulcanizing) silicone at the base of 
+                                the capacitor and re-ran the simulations.</li>
+                            
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Result:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>The revised design with RTV silicone reinforcement successfully 
+                                passed vibration testing, ensuring improved durability of the DC-line board.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!-- Images Block Below Text -->
+                <div class="flex space-x-8 mt-8">
+                    <div class="flex-1">
+                        <img src="../assets/images/cap_vib.png" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <img src="../assets/images/cap_vib1.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <img src="../assets/images/cap_vib2.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+                
+                
            <!-- <div class="flex justify-center">
                 <video id="project-video" class="w-2/3 h-auto mt-8 rounded-lg shadow-lg" autoplay muted controls>
                     <source src="../assets/video/91EE5AF0-FDCB-498D-99F2-97001D6E204C.MP4" type="video/mp4">
