@@ -17,12 +17,21 @@
         <a href="index.html" class="logo text-gray-900 text-3xl font-semibold hover:text-black transition-colors duration-300">
             Lovedeep Singh 
         </a>
-        <nav class="flex space-x-6">
-            <a href="#projects" class="text-gray-700 hover:text-black">Projects</a>
-            <!--<a href="#articles" class="text-gray-700 hover:text-black">Articles</a>
-            <a href="aboutme.html" class="text-gray-700 hover:text-black">About</a> -->
-            <a href="#contact" class="text-gray-700 hover:text-black">Contact</a>
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+              &#9776;
+            </div>
+            <ul class="nav-links hidden" id="navLinks">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>               
         </nav>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.getElementById('navLinks');
+                navLinks.classList.toggle('hidden');
+            }
+        </script>          
     </header>
 
     <!-- About Section -->
@@ -94,14 +103,18 @@
                     <h3 class="mt-4 text-lg font-semibold">Mechanical design of 1.2kW Charger for Ultraviolette automotive</h3>
                     <p class="text-gray-600">Cellprop Pvt. Ltd.</p>
                 </a>
-                <!-- Project 3 
-
+                <!-- Project 3 -->
                 <a href="projects/project3.html" class="bg-white shadow-md rounded-lg p-4 text-center block transform transition duration-300 hover:scale-105 hover:shadow-xl">
-                    <img src="assets/images/charger.jpg" alt="Project 2" class="w-full h-40 object-cover rounded">
-                    <h3 class="mt-4 text-lg font-semibold">Mechanical design of 1.2kW Charger for Ultraviolette automotive</h3>
+                    <img src="assets/images/motor_stator.png" alt="Project 3" class="w-full h-60 object-cover rounded">
+                    <h3 class="mt-4 text-lg font-semibold">Thermal design of 1 kW the flux switching DC excited Electric Motor</h3>
                     <p class="text-gray-600">Cellprop Pvt. Ltd.</p>
                 </a>
-            -->
+                <!-- Project 4 -->
+                <a href="projects/project4.html" class="bg-white shadow-md rounded-lg p-4 text-center block transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="assets/images/dyno.png" alt="Project 3" class="w-full h-60 object-cover rounded">
+                    <h3 class="mt-4 text-lg font-semibold">Mechanical design of Electric motor mount and coupler</h3>
+                    <p class="text-gray-600">Exro Technologies</p>
+                </a>
             </div>
         </div>
     </section>
