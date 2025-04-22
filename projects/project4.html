@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">     
 </head>
 <body>
-    <header class="w-full bg-white shadow-md py-4 px-10 flex justify-between items-center">
+    <header class="w-full bg-white-50 shadow-md py-4 px-10 flex justify-between items-center">
         <a href="../index.html" class="text-xl font-semibold text-gray-900">Lovedeep Singh</a>
         <nav class="flex space-x-6"> 
             <a href="#contact" class="text-gray-700 hover:text-black transition">Contact</a>
@@ -23,9 +23,14 @@
     <section id="Project 2 name" class="pt-20 px-20 bg-gray-50 text-center">
         <div class="container mx-auto">
             <h2 class="text-4xl font-semibold text-gray-900 mb-4">Mechanical Design of an Electric Motor Mount and Coupling System</h2>
-            <div class="flex justify-center">
-                <img src="../assets/images/dyno111.PNG" alt="Project Image" class="w-2/3 h-auto mt-8 rounded-lg shadow-lg">
-                </img>
+            
+            <div class="flex space-x-8 mt-8">
+                <div class="flex-1">
+                    <img src="../assets/images/81C5ED17-31BF-4948-9495-A27665976FB9.JPG" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="flex-1">
+                    <img src="../assets/images/E239A2A0-C943-4136-9F7A-2342D5D378E4 (1).JPG" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                </div>
             </div>
             <!-- Description below the video -->
             <div class=" text-lg text-gray-700 leading-relaxed mt-4">
@@ -48,10 +53,10 @@
             <!--Project Intro-->
             <div class="mt-10 p-8 bg-gray-100 rounded-lg shadow-md max-w-6xl mx-auto hover-effect">
                 <h3 class="text-2xl font-semibold text-gray-900 mb-4">Project Overview </h3>
-                <p class="list-disc text-lg text-gray-700 text-left pl-5"> This project focused on the design and development 
-                    of motor mounts and 
-                    a coupler for a high-performance system operating at 15,000 RPM with a torque of 450 Nm. 
-                    The gearbox was removed, and the motor mount was integrated directly onto the existing gearbox casing.
+                <p class="list-disc text-lg text-gray-700 text-left pl-5"> This project involved the design and development of motor mounts and 
+                    a coupler for a high-performance system operating at 15,000 RPM and 410 Nm of torque. 
+                    The gearbox cover and internal gears were removed, and the entire system was mounted for testing. 
+                    The purpose of this setup was to evaluate the motor's performance on a dynamometer.
                 </p>
             </div>
             
@@ -68,7 +73,7 @@
 
             <!-- Requirements Gathering -->
             <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Component selection</h3>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Bearing and Sealing challenge</h3>
 
                 
                 <ul class="list-none text-lg text-gray-700 text-left space-y-4">
@@ -76,22 +81,25 @@
                         <strong>Situation & Task:</strong>  
                         <ul class="list-disc pl-5">
                             <li>
-                                This was Cellprop's first electric motor design project, still in its early development phase. 
-                                As the Mechanical Engineering Intern, I was responsible for defining thermal system requirements, 
-                                 identifying potential thermal failure points to support the thermal design process. 
+                                The first challenge in designing a system to operate at 15,000 RPM was selecting appropriate bearings and seals.
                             </li>
+                            <li>I designed the initial iteration of the motor coupler (55 mm diameter) to accommodate both the bearing and the seal. 
+                                However, the lead times for these components exceeded the project timeline (as shown in the first image).</li>
+                            <li>Another issue with this design was the complexity of assembly and disassembly. 
+                                In the event of seal failure, replacing the seal would be difficult. </li>
                         </ul>
                     </li>
 
                     <li>
                         <strong>Action:</strong>
                         <ul class="list-disc pl-5">
-                            <li>A literature review revealed that elevated temperatures can lead to insulation failure, ultimately resulting in motor failure. 
-                                Therefore, the maximum allowable temperature near the insulation is determined by its thermal class.
+                            <li> Most bearings capable of operating at 15,000 RPM are designed for shafts with diameters smaller than 35–40 mm. 
+                                This was my first key insight after researching readily available bearing options.</li>
                             </li>
-                            <li>It was found that for every 10°C increase in temperature, 
-                                the lifespan of the insulation is reduced by half.
-                            </li>
+                            <li>To accommodate an off-the-shelf bearing and seal rated for 15,000 RPM, 
+                                I redesigned the shaft to step down from 60 mm to 35 mm in diameter. </li>
+                            <li> Additionally, I incorporated an adaptor on the opposite end of the shaft to interface with the dynamometer coupler.</li>
+
 
                         </ul>
                     </li>
@@ -99,7 +107,8 @@
                     <li>
                         <strong>Result:</strong>
                         <ul class="list-disc pl-5">
-                            <li>I determined the temperature limit for the copper winding to be 120 °C, based on Class-H insulation specifications.</li>
+                            <li>The shaft and bearing assembly is user-friendly, allowing for easy 
+                                integration with the motor and ensuring concentric alignment on the mounting.</li>
                         </ul>
                     </li>
                 </ul>
@@ -107,89 +116,61 @@
                 <!-- Images Block Below Text -->
                 <div class="flex space-x-8 mt-8">
                     <div class="flex-1">
-                        <img src="../assets/images/motor_insulation.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/image (5).png" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     <div class="flex-1">
-                        <img src="../assets/images/motor_half_life.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/image (2).png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+                <div class="flex space-x-8 mt-8">
+                    <div class="flex-1">
+                        <img src="../assets/images/47638FE7-20CE-42A9-B960-2AD02B03723D.JPG" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="flex-1">
+                        <img src="../assets/images/C0A36A89-B801-43F6-B8C6-A19BC5753D2E.JPG" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                 </div>
             </div>
 
 
-    
-            <!-- Heat load -->
+
+            <!-- Requirements Gathering -->
             <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Heat load estimation</h3>
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Cooling and Lubrication</h3>
+
                 
                 <ul class="list-none text-lg text-gray-700 text-left space-y-4">
                     <li>
-                        <strong>Task:</strong>  
+                        <strong>Situation & Task:</strong>  
                         <ul class="list-disc pl-5">
                             <li>
-                                After identifying the thermal requirements and critical failure points, 
-                                my next objective was to analyze heat generation and determine the resulting temperature distribution within the motor.
+                                The next challenge was to design a cooling and lubrication system for the motor and bearings, 
+                                as the original gears—previously responsible for oil splash 
+                                and circulation within the motor—had been removed.
                             </li>
-                        </ul>
-                    <li>
-                        <strong>Action:</strong>
-                        <ul class="list-disc pl-5">
-                            <li>Calculated the heat load from copper losses in both AC and DC windings based on current flow.</li>
-                            <li>Estimated core losses in the stator and rotor laminations using frequency and magnetic flux density values.</li>
-                        </ul>
-                    <li>
-                        <strong>Result:</strong>
-                        <ul class="list-disc pl-5">
-                            <li>The total heat generated in the copper windings was approximately 55 watts. </li>
-                            <li>Core losses were estimated at 61 watts in the stator and 20 watts in the rotor,
-                                 based on an operating frequency of 100 Hz and a flux density of 15 kilogauss.
-                            </li>
-                            <li>Core losses were estimated at 15 watts in the stator and 5 watts in the rotor,
-                                based on an operating frequency of 50 Hz and a flux density of 15 kilogauss.
-                           </li>
+                            <li>While adding an external oil pump was straightforward, the main challenge was 
+                                creating a closed-loop oil circuit within the motor, 
+                                as there was no proper inlet available. 
+                                Additionally, ensuring effective lubrication for the bearing installed on the shaft added to the complexity.</li>
                         </ul>
                     </li>
-                </ul>
-                
-                <!-- Images Block Below Text -->
-                <div class="flex space-x-8 mt-8">
-                    <div class="flex-1">
-                        <img src="../assets/images/motor_coreloss.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
-                    </div>
-                    
-                </div>
-            </div>
 
-            <!-- Simulations -->
-            <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Thermal Simulations</h3>
-                
-                <ul class="list-none text-lg text-gray-700 text-left space-y-4">
-                    <li>
-                        <strong>Task:</strong>  
-                        <ul class="list-disc pl-5">
-                            <li>
-                                Following the estimation of the heat load, my subsequent objective was to conduct a detailed analysis of the internal
-                                temperature distribution and determine an effective thermal management strategy for the motor.
-                            </li>
-                        </ul>
                     <li>
                         <strong>Action:</strong>
                         <ul class="list-disc pl-5">
-                            <li>My initial step was to assess whether natural convection would suffice or if forced air convection was necessary. 
-                                Based on the total heat dissipation, I calculated the surface area required to support natural convection.</li>
-                            <li>Estimated the total thermal resistance from the copper windings to the motor’s external surface, excluding fins and 
-                                assuming natural convection.
-                                 This served as the baseline case for subsequent design development.</li>
-                            <li>Completed simulations for the motor in Siemens FEMAP(TMG).</li>
-                            <li>I calculated the equivalent thermal conductivity of the copper (considering the varnish) and steel laminations—
-                                considering the laminated stack structure—in both the axial and radial directions. </li>
+                            <li> I figured out the internal cooling loop of the motor, and the make custom inlet to feed oil inside the motor.</li>
+                            </li>
+                            <li>For bearing i added a addition oil inlet in the bearing holder. This way i was able to solve the coolign and lubrication challenge </li>
+
+
                         </ul>
+                    </li>
+
                     <li>
                         <strong>Result:</strong>
                         <ul class="list-disc pl-5">
-                            <li>Based on the calculations and simulation results, 
-                                it was concluded that the motor could be adequately 
-                                cooled using natural convection at an operating frequency of 50 Hz. </li>
+                            <li>The shaft and bearing assembly is user-friendly, allowing for easy 
+                                integration with the motor and ensuring concentric alignment on the mounting.</li>
                         </ul>
                     </li>
                 </ul>
@@ -197,68 +178,22 @@
                 <!-- Images Block Below Text -->
                 <div class="flex space-x-8 mt-8">
                     <div class="flex-1">
-                        <img src="../assets/images/motor_temp_table.png" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/C7FD330B-E668-4D6D-9075-BAA12062144A.JPG" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     <div class="flex-1">
-                        <img src="../assets/images/motor_thermal_network.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/Picture1.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                 </div>
                 <div class="flex space-x-8 mt-8">
                     <div class="flex-1">
-                        <img src="../assets/images/motor_stator1.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/Picture3.png" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                     <div class="flex-1">
-                        <img src="../assets/images/motor_rotor.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
-                    </div>
-                    <div class="flex-1">
-                        <img src="../assets/images/motor_air.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
+                        <img src="../assets/images/dyno.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-md">
                     </div>
                 </div>
             </div>
 
-            <!-- Manufacturing -->
-            <div class="mt-10 p-8 rounded-lg bg-gray-100 shadow-lg max-w-6xl mx-auto bg-white hover-effect">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Manufacturing and Assembly</h3>
-                
-                <ul class="list-none text-lg text-gray-700 text-left space-y-4">
-                    <li>
-                        <strong>Task:</strong>  
-                        <ul class="list-disc pl-5">
-                            <li>
-                                Once the motor's mechanical performance and thermal management were validated, 
-                                the next step was to proceed with its manufacturing.
-                            </li>
-                        </ul>
-                    <li>
-                        <strong>Action:</strong>
-                        <ul class="list-disc pl-5">
-                            <li>For the stator and rotor laminates, i worked with local vendor to Laser cut it.</li>
-                            <li>For the motor casing, we used an off-the-shelf pipe and performed a pipe 
-                                boring operation to achieve the required internal dimensions. 
-                                This approach was chosen to reduce manufacturing costs.</li>
-                        </ul>
-                    <li>
-                        <strong>Result:</strong>
-                        <ul class="list-disc pl-5">
-                            <li> I successfully manufactured the stator, rotor, and casing using local vendors. 
-                                The manufacturing process was completed within the allocated budget and timeline.</li>
-                        </ul>
-                    </li>
-                </ul>
-                
-                <!-- Images Block Below Text -->
-                <div class="flex space-x-8 mt-8">
-                    <div class="flex-1">
-                        <img src="../assets/images/motor_stator_mfg.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
-                    </div>
-                    <div class="flex-1">
-                        <img src="../assets/images/motor_stator_cad.png" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
-                    </div>
-                    <div class="flex-1">
-                        <img src="../assets/images/motor_rotor_cad.png" alt="Image 1" class="w-full h-auto rounded-lg shadow-md">
-                    </div>
-                </div>
-            </div>
 
 
 
